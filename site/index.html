@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1,maximum-scale=5,minimum-scale=1,width=device-width">
+        <link rel="icon" type="image/png" href="https://axel669.net/images/megaman-rounded.png">
+        <title>Fanart Rules</title>
+    </head>
+    <body ws-x="@theme:dark">
+        <script src="https://cdn.jsdelivr.net/npm/@axel669/windstorm@0.3.8/dist/browser.js"></script>
+        <!-- <script src="https://cdn.auth0.com/js/auth0/9.11/auth0.min.js"></script> -->
+        <script>
+            const params = new URLSearchParams(location.hash.slice(1))
+            window.tokenInfo = Object.fromEntries(params.entries())
+
+            history.replaceState(null, null, location.pathname)
+        </script>
+        <script type="module" src="./app.js"></script>
+    </body>
+</html>

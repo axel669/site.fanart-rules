@@ -1,0 +1,17 @@
+{
+  "name": "art-thing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@axel669/http": "^0.1.2",
+    "@tsndr/cloudflare-worker-jwt": "^2.5.3",
+    "cookie": "^0.6.0"
+  }
+}
