@@ -34,7 +34,7 @@ export const onRequestPost = async ({ request, data }) => {
             },
         }
     })
-    if (existing.data.document?.email !== user.email) {
+    if (existing.data.document !== null && existing.data.document.email !== user.email) {
         return Response.json({
             errors: ["URL is already in use."]
         })
