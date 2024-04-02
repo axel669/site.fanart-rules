@@ -128,6 +128,8 @@ const RuleEditor = (props) => {
     console.log("editor called")
     const { user } = props
 
+    user.rules = user.rules ?? {}
+    user.url = user.url ?? ""
     const groups = schema.map(
         group => html`<${EditorGroup} ...${{ group, rules: user.rules }} />`
     )
